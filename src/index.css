@@ -99,7 +99,7 @@
 
 @layer components {
   .horror-text {
-    @apply text-shadow-lg filter drop-shadow-lg;
+    @apply filter drop-shadow-lg;
     text-shadow: 0 0 10px rgba(255, 69, 0, 0.8);
   }
 
