@@ -61,6 +61,13 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				horror: {
+					darkest: '#1A0B2E',
+					dark: '#2C1810',
+					blood: '#8B0000',
+					accent: '#FF4500',
+					glow: '#FF6B35',
 				}
 			},
 			borderRadius: {
@@ -84,11 +91,27 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'horror-glow': {
+					'0%, 100%': { boxShadow: '0 0 5px #FF4500, 0 0 10px #FF4500, 0 0 15px #FF4500' },
+					'50%': { boxShadow: '0 0 10px #FF4500, 0 0 20px #FF4500, 0 0 30px #FF4500' },
+				},
+				'fade-in': {
+					'0%': { opacity: '0', transform: 'translateY(10px)' },
+					'100%': { opacity: '1', transform: 'translateY(0)' },
+				},
+				'shake': {
+					'0%, 100%': { transform: 'translateX(0)' },
+					'25%': { transform: 'translateX(-2px)' },
+					'75%': { transform: 'translateX(2px)' },
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'horror-glow': 'horror-glow 2s ease-in-out infinite',
+				'fade-in': 'fade-in 0.3s ease-out',
+				'shake': 'shake 0.5s ease-in-out'
 			}
 		}
 	},
